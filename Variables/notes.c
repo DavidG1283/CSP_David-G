@@ -1,3 +1,4 @@
+// David Garcia, Variables Notes C
 #include <stdio.h>
 
 char name[] = "Garcia";
