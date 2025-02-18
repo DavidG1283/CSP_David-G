@@ -18,13 +18,14 @@ savings = income - total_expenses
 
 savings_percent = (savings / income) * 100  
   
-print(f"You should save {savings_percent:.2f}% of your income.")  
+print(f"Based on you income and how much you spend, you should save {savings_percent:.2f}% of your income.")
+print(f"Or in other words you should save ${savings} of your income ") 
 
 income3 = groceries + transportation + utilities + rent  
 
 income2 = income - income3 
 
-print(f"You have {income2:.2f} left to spend")
+print(f"You have ${income2:.2f} left to spend")
 
 
 rentpercent = (rent / income) * 100 
@@ -41,7 +42,7 @@ print(f"Transportation is {transpercent}% of your income")
 print(f"groceries is {grocpercent}% of your income")
 print(f"Utilities is {utipercent}% of your income")
 
-print(f"You spend {rent}$ in Rent")
-print(f"You spend {transportation}$ in Transportation")
-print(f"You spend {utilities}$ in Utilities")
-print(f"You spend {groceries}$ in Groceries")
+print(f"You spend ${rent} in Rent")
+print(f"You spend ${transportation} in Transportation")
+print(f"You spend ${utilities} in Utilities")
+print(f"You spend ${groceries} in Groceries")
