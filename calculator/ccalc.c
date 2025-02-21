@@ -17,7 +17,8 @@ int main() {
     float total_expenses;
     float remaining_income;
 
-    printf("Hello user, welcome to my calculator, here you will calculate how much percentage you should put into saving and a lot more, HAVE FUN!!!!!!!!!\n");
+    printf("Hello user, welcome to my calculator, here you will calculate how much percentage you should put into saving.\n");
+    printf("HAVE FUN!!!!!!!!!\n");
     
     printf("What is your monthly income (do not include dollar sign, only the number)?:\n");
     scanf("%f", &income);
@@ -34,11 +35,11 @@ int main() {
     printf("How much do you spend on utilities monthly (do not include dollar sign, only the number)?:\n");
     scanf("%f", &utilities);
     
+   
+    save = income * 0.1;
+    
     total_expenses = rent + transportation + groceries + utilities;
-
     remaining_income = income - total_expenses;
-
-    save = remaining_income * 0.1;
     
     printf("The amount of money left that you have to spend on your stuff is $%.2f\n", remaining_income);
     printf("You should save 10 percent of the money left after paying your expenses, which is $%.2f\n", save);
