@@ -31,7 +31,6 @@ else: #<-- if the boolean is false, then else executes
 
 #5. What kind of statement do you use if you have more than 2 needed outcomes?
 num = int(input(("say a number:\n")))
-num = 2
 if num == 0: #<-- always starts the conditional
     print("There are none.")
 elif num == 1:  #everything in between is an elif
