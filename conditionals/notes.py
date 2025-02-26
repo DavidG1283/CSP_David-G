@@ -1,5 +1,6 @@
 # David Garcia Conditionals Notes Py
 name = input("What is you name\n")
+age = input("How old are you?\n")
 #1. What puts something inside of the “if” statement?
 #the tab at the front
 
@@ -7,7 +8,7 @@ name = input("What is you name\n")
 if name == "David":
     print("Hi David")
 else:
-    print(f"Hello{name}")
+    print(f"Hello {name}")
 
 
 
@@ -16,18 +17,18 @@ else:
 #Checks a condition and if it is true it will do a thing
 
 
-if name == "David":  #<-- condition
-    print("Hi David")  #<-- this is what it does if its true
+#if name == "david":  #<-- condition
+    #print("welcome to my porgram")  #<-- this is what it does if its true
 
 
 #3. What are boolean statements?
 #a true or a false statement
 
 #4. What do else statements do?
-if name == "David":
-    print("Hi David")
+if age == "17":
+    print("You are able to get a drivers license")
 else: #<-- if the boolean is false, then else executes
-    print(f"Hello{name}")
+    print("You are not able to get a license")
 
 #5. What kind of statement do you use if you have more than 2 needed outcomes?
 num = int(input(("say a number:\n")))
@@ -60,7 +61,7 @@ else:  # else always ends the ocnditional
 
 #7. What are the 3 logical operators?
 
-if num <10 and num >5: #"and" means both booleans are true
+if num >10 and num <5: #"and" means both booleans are true
     print("This is a big single digit number")
 
 elif num <10 or num >5: #"or" means one booleans must be true
