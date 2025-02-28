@@ -1,19 +1,14 @@
 # David Garcia Conditionals Old enough Py
-name = input("What is you name\n")
 age = int(input(("How old are you:\n")))
-
-if name == "David":
-    print("Hi David")
-else:
-    print(f"Hello {name}")
-
-if age >= 17:
+if age >= 16:
     print("You are able to get a drivers license")
-if age >= 21:
-    print("You are able to vote")
-if age >= 15:
+elif age >= 20:
+    print("You are able to go to school, you are able to vote, you are able to get a learners permit, and you are able to get a drivers license")
+elif age== 15:
     print("You are able to get a learners permit")
-if age == 0:
+elif age == 0:
     print("bro was just born.")
-elif age >4:
+elif age >= 5:
     print("You are able to go to school")
+else:
+    print("You are not old enough to do anything")

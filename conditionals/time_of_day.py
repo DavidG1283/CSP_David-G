@@ -19,7 +19,6 @@ hour = local_time.tm_hour
 #print(day)
 #print(hour)
 #print(local_time) #military time
-
 if hour <= 12:
     print("Good morning")
 elif hour >= 12 and hour <= 18:
