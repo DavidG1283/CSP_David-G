@@ -1,24 +1,33 @@
+#David Garcia Time of the day py
+
 import time
 
-#first instance of time in proramming
+
 first_time = time.gmtime()
-#print(first_time)
 
-#Current time in seconds 
+
+
 current = time.time()
-#print(current) #seconds since Jan 1 1970
 
-#Current date and time like we see it normally 
+
+
 now = time.ctime(current)
-#print(now)
 
-#get just a part of the time
+
+
 local_time = time.localtime(current)
 day = local_time.tm_wday
 hour = local_time.tm_hour
+<<<<<<< HEAD
 #print(day)
 #print(hour)
 #print(local_time) #military time
+=======
+
+
+
+
+>>>>>>> b3e1d7a211c4930630db9c8c006f62993033595e
 if hour <= 12:
     print("Good morning")
 elif hour >= 12 and hour <= 18:
