@@ -8,7 +8,7 @@ nums = [12,3,66,7,3,3,2]
 for num in nums:
     print(num)
 
-    #While
+#While
 
 x = 0 
 while x < 10:
