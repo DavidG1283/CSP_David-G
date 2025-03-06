@@ -20,14 +20,14 @@ while x < 10:
 #What are lists? 
 nums = [1,2,3,4,5,6,7,6]
 siblings = ["Alex", "David", "Andrew", "Vienna", "Tia", "Treyson", "Xavier", "Haily"]
-print(nums)
-print(siblings[3])
+#print(nums)
+#print(siblings[3])
 
-siblings[7] = "Jake"
-siblings.pop(5)
-siblings.insert(1, "Jayshree")
-siblings.insert(2, ["Joe", "Noah", "Lizz"])
-print(siblings)
+#siblings[7] = "Jake"
+#siblings.pop(5)
+#siblings.insert(1, "Jayshree")
+#siblings.insert(2, ["Joe", "Noah", "Lizz"])
+#print(siblings)
 
 #How do you make lists in python? 
 
@@ -38,17 +38,17 @@ for sibling in siblings:
 for x in range(0,101, 20):
     print(x)
 #How do you make while loops in python?
-#import random
-#x = 1 #variable to keep count of my iteration
-#goose = random.randint(1,20)
-#while x <= 20:
-#    if x == goose:
-#        print("goose")
-#        break #tells loop to stop
-#    else:
-#        print("duck")
-#    print("Duck")
-#    x+= 1 
+import random
+x = 1 #variable to keep count of my iteration
+goose = random.randint(1,20)
+while x <= 20:
+    if x == goose:
+        print("goose")
+        break #tells loop to stop
+    else:
+        print("duck")
+    print("Duck")
+    x+= 1 
 
 #continue moves on to the next iteration without finishing
 #How do you make lists in C?
