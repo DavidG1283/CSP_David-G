@@ -38,17 +38,17 @@ for sibling in siblings:
 for x in range(0,101, 20):
     print(x)
 #How do you make while loops in python?
-import random
-x = 1 #variable to keep count of my iteration
-goose = random.randint(1,20)
-while x <= 20:
-    if x == goose:
-        print("goose")
-        break #tells loop to stop
-    else:
-        print("duck")
-    print("Duck")
-    x+= 1 
+#import random
+#x = 1 #variable to keep count of my iteration
+#goose = random.randint(1,20)
+#while x <= 20:
+#    if x == goose:
+#        print("goose")
+#        break #tells loop to stop
+#    else:
+#        print("duck")
+#    print("Duck")
+#    x+= 1 
 
 #continue moves on to the next iteration without finishing
 #How do you make lists in C?
