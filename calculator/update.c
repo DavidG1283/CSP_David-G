@@ -2,10 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void get_user_input(char *name, float *income, float *groceries, float *transportation, float *utilities, float *rent);
-void calculate_expenses(float groceries, float transportation, float utilities, float rent, float *total_expenses, float *income_left);
-void calculate_percentages(float income, float rent, float transportation, float groceries, float utilities, float *rent_percent, float *trans_percent, float *groc_percent, float *uti_percent);
-void display_results(char *name, float total_expenses, float savings, float income_left, float rent_percent, float trans_percent, float groc_percent, float uti_percent, float rent, float transportation, float utilities, float groceries);
+void getandcalculate(char *name, float *income, float *groceries, float *transportation, float *utilities, float *rent, float *total_expenses, float *income_left, float *rent_percent, float *trans_percent, float *groc_percent, float *uti_percent, float *savings);
+void results(char *name, float total_expenses, float savings, float income_left, float rent_percent, float trans_percent, float groc_percent, float uti_percent, float rent, float transportation, float utilities, float groceries);
 
 int main() {
     char name[100];
@@ -13,25 +11,19 @@ int main() {
     float total_expenses, income_left;
     float rent_percent, trans_percent, groc_percent, uti_percent;
     
-    get_user_input(name, &income, &groceries, &transportation, &utilities, &rent);
-    calculate_expenses(groceries, transportation, utilities, rent, &total_expenses, &income_left);
-    calculate_percentages(income, rent, transportation, groceries, utilities, &rent_percent, &trans_percent, &groc_percent, &uti_percent);
-    
-    float savings = income * 0.1;
-    display_results(name, total_expenses, savings, income_left, rent_percent, trans_percent, groc_percent, uti_percent, rent, transportation, utilities, groceries);
+    getandcalculate(name, &income, &groceries, &transportation, &utilities, &rent, &total_expenses, &income_left, &rent_percent, &trans_percent, &groc_percent, &uti_percent, &savings);
+    results(name, total_expenses, savings, income_left, rent_percent, trans_percent, groc_percent, uti_percent, rent, transportation, utilities, groceries);
     
     return 0;
 }
 
-void get_user_input(char *name, float *income, float *groceries, float *transportation, float *utilities, float *rent) {
-    // Getting the user's name
+void getandcalculate(char *name, float *income, float *groceries, float *transportation, float *utilities, float *rent, float *total_expenses, float *income_left, float *rent_percent, float *trans_percent, float *groc_percent, float *uti_percent, float *savings) {
     printf("What is your name?:\n");
-    fgets(name, sizeof(name), stdin);  // To get the user's name (including spaces)
-    name[strcspn(name, "\n")] = 0; // Remove newline character
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = 0;
     
     printf("Hello %s, welcome to my program. In this program you are going to use a calculator, which will ask for your usual expenses and will calculate how much you should put into your savings account.\n", name);
     
-    // Getting income and expenses from the user
     printf("What is your income? ");
     scanf("%f", income);
     
@@ -46,18 +38,15 @@ void get_user_input(char *name, float *income, float *groceries, float *transpor
     
     printf("How much do you spend on rent? ");
     scanf("%f", rent);
-}
 
-void calculate_expenses(float groceries, float transportation, float utilities, float rent, float *total_expenses, float *income_left) {
-    *total_expenses = groceries + transportation + utilities + rent;
-    *income_left = *total_expenses - *income_left;
-}
-
-void calculate_percentages(float income, float rent, float transportation, float groceries, float utilities, float *rent_percent, float *trans_percent, float *groc_percent, float *uti_percent) {
-    *rent_percent = (rent / income) * 100;
-    *trans_percent = (transportation / income) * 100;
-    *groc_percent = (groceries / income) * 100;
-    *uti_percent = (utilities / income) * 100;
+    *total_expenses = *groceries + *transportation + *utilities + *rent;
+    *income_left = *income - *total_expenses;
+    
+    *rent_percent = (*rent / *income) * 100;
+    *trans_percent = (*transportation / *income) * 100;
+    *groc_percent = (*groceries / *income) * 100;
+    *uti_percent = (*utilities / *income) * 100;
+    *savings = *income * 0.1;
 }
 
 void display_results(char *name, float total_expenses, float savings, float income_left, float rent_percent, float trans_percent, float groc_percent, float uti_percent, float rent, float transportation, float utilities, float groceries) {
