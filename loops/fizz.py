@@ -7,5 +7,6 @@ while x < 50:
         print("FizzBuzz")  
     elif x % 3 == 0:  
         print("Fizz")  
-    elif x % 5 == 0:  
+    else:
+        x % 5 == 0
         print("Buzz") 
