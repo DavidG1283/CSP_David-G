@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Color Theory Boxes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .color-box {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            border-width: 5px;
+            border-style: solid;
+        }
+        .complementary {
+            background-color: blue;
+            border-color: orange;
+        }
+        .analogous {
+            background-color: green;
+            border-color: yellow;
+        }
+        .triadic {
+            background-color: red;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="color-box complementary">
+        Complementary<br>Blue and Orange
+    </div>
+
+    <div class="color-box analogous">
+        Analogous<br>Green and Yellow
+    </div>
+
+    <div class="color-box triadic">
+        Triadic<br>Red, Blue and Yellow
+    </div>
+
+</body>
+</html>
