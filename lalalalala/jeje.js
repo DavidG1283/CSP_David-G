@@ -1,9 +1,12 @@
 // JS\
 
-function hello(){
-    document.getElementById("title").innerHTML = "Hello World"
+function lirili(){
+    document.getElementById("lala").innerHTML = "Cats are popular pets valued for their companionship, playfulness, and ability to kill vermin. They are domesticated members of the Felidae family, with the domestic cat (Felis catus) being the only domesticated species within the family. "
 }
 
+function hello() {
+    document.getElementById("title").innerHTML = "CATTTSSS"
+}
 function change() {
     document.getElementById("image").src = "https://purina.cl/sites/default/files/2022-11/purina-brand-cuanto-vive-un-gato-nota_03.jpg"
 }
