@@ -6,6 +6,11 @@ p {
     font-family: "Imperial Script", cursive;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
 }
 h1{
     color: blueviolet;
@@ -21,7 +26,7 @@ h2 {
 }
 
 h3{
-    color: aqua;
+    color:black;
     font-family: "Imperial Script", cursive;
     padding-left: 39%;
     display: grid;
