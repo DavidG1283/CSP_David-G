@@ -1,35 +1,81 @@
 body {
-    background-color: antiquewhite; 
+    background-color: lightblue; 
 }
 p {
-    color: brown;
-    font-family: "Imperial Script", cursive;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     font-style: normal;
     width: 100%;
     padding: 50px 0;
     text-align: center;
-    background-color: lightblue;
     margin-top: 20px;
+    font-size: 150%;
 }
 h1{
-    color: blueviolet;
+    color: black;
     text-align: center; 
-    padding-right: 10%;
+    padding-left: 0%;
     margin-top: 5%;
 }
 
 h2 {
-    padding-left: 40%;
+    padding-left: 45.5%;
     display: grid;
     grid-template-columns:200px 4em 10%;
+    font-size: 150%;
+
 }
 
 h3{
     color:black;
-    font-family: "Imperial Script", cursive;
-    padding-left: 39%;
+    font-family: cursive;
+    padding-left: 45%;
     display: grid;
-    grid-template-columns:200px 4em 10%; 
+    grid-template-columns:200px 4em 10%;
+
 }
 
+img{
+    text-align: center; 
+    padding-right: 10%;
+    margin-top: 5%;
+    grid-template-columns:150px 4em 20%;
+    align-content:flex-end;
+    justify-content: space-evenly;
+}
+
+ol{
+    color:black;
+    font-family: cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 150%;
+
+}
+
+ul{    color:black;
+    font-family: cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+p1{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    padding: 100px 20;
+    text-align: center;
+    margin-top: 100px;
+}
